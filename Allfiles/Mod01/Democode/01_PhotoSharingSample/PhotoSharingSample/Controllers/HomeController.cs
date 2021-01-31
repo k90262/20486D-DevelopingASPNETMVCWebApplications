@@ -31,7 +31,7 @@ namespace PhotoSharingSample.Controllers
             if (requestedPhoto != null)
             {
                 string webRootpath = _environment.WebRootPath;
-                string folderPath = "\\images\\";
+                string folderPath = "/images/";
                 string fullPath = webRootpath + folderPath + requestedPhoto.PhotoFileName;
 
                 FileStream fileOnDisk = new FileStream(fullPath, FileMode.Open);
